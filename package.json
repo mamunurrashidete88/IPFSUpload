@@ -1,0 +1,29 @@
+{
+  "name": "heroipfsupload",
+  "version": "1.0.0",
+  "description": "Upload Hero images to IPFS using pinata in prep for NFT creation.",
+  "main": "heroipfsupload.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "testPinataAuth": "node pinataAuthenticationTest.js",
+    "heroupload": "node heroipfsupload.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scranley/heroipfsupload.git"
+  },
+  "keywords": [
+    "ipfs",
+    "ruby",
+    "nft"
+  ],
+  "author": "Seamus Cranley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scranley/heroipfsupload/issues"
+  },
+  "homepage": "https://github.com/scranley/heroipfsupload#readme",
+  "dependencies": {
+    "@pinata/sdk": "^1.1.23"
+  }
+}

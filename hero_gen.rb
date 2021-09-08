@@ -7,9 +7,7 @@ mouth: {  types: ['', 'mymouth1'] },
 eyes: { types: ['', 'myeyes1'] }
 }
 
-def generate_hero( codes )
-  hero = Pixelart::Image.new( 32, 32 )
-  $heroMetaData = {
+$heroMetaData = {
       "name"=> "",
       "description" => "", 
       "image" => "",
@@ -17,7 +15,9 @@ def generate_hero( codes )
       "mouth" => "",      ##Mouth
       "eyes" => ""       ##Eyes
       }
-           
+
+def generate_hero( codes )
+  hero = Pixelart::Image.new( 32, 32 )         
   COMPONENTS.each_with_index do |(key,part),i|
     code  = codes[i] 
     if code != 0                  
